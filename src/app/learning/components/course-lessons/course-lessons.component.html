@@ -1,0 +1,126 @@
+<div [ngStyle]="{'background-color': '#EBEBD3', 'height': '110vh'}">
+  <div class="course-lesson">
+    <div class="course-title">
+      <p><b>First impression of hydroponic systems</b></p>
+    </div>
+    <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+      {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+    </button>
+
+    <mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Introduction to hydroponics</ng-template>
+          <div class="grid-container">
+            <div class="lesson">
+              <div class="lessonPic">
+                <img src="assets/leccion1.jpg" alt="imagen de leccion 1">
+                <div class="descriptionLesson">
+                  <p>In this class you will lear an introduction and principal material that you will need. </p>
+                </div>
+                <div class="buttons">
+                  <button mat-button matStepperLesson style="color:white">Start</button>
+                  <button mat-button matStepperNext style="color:white">Next lesson</button>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+            </div>
+          </div>
+        </form>
+      </mat-step>
+
+
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>The best place</ng-template>
+          <div class="grid-container">
+            <div class="lesson">
+              <div class="lessonPic">
+                <img src="assets/leccion2.jpg" alt="imagen de leccion 1">
+                <div class="descriptionLesson">
+                  <p>In this lesson we will set a perfect place to your hydroponic system at roof. </p>
+                </div>
+                <div class="buttons">
+                  <button mat-button matStepperLesson style="color:white">Start</button>
+                  <button mat-button matStepperNext style="color:white">Next lesson</button>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+            </div>
+          </div>
+        </form>
+      </mat-step>
+
+
+      <mat-step [stepControl]="thirdFormGroup">
+        <form [formGroup]="thirdFormGroup">
+          <ng-template matStepLabel>Taking care and vitamins</ng-template>
+          <div class="grid-container">
+            <div class="lesson">
+              <div class="lessonPic">
+                <img src="assets/leccion3.jpg" alt="imagen de leccion 1">
+                <div class="descriptionLesson">
+                  <p>In this class you will lear an introduction and principal material that you will need. </p>
+                </div>
+                <div class="buttons">
+                  <button mat-button matStepperLesson style="color:white">Start</button>
+                  <button mat-button matStepperNext style="color:white">Next lesson</button>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+            </div>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="fourthFormGroup">
+        <form [formGroup]="fourthFormGroup">
+          <ng-template matStepLabel>Types of plants and their seeds</ng-template>
+          <div class="grid-container">
+            <div class="lesson">
+              <div class="lessonPic">
+                <img src="assets/leccion4.jpg" alt="imagen de leccion 1">
+                <div class="descriptionLesson">
+                  <p>Is important to know the type of plant and what they need to grow under water. </p>
+                </div>
+                <div class="buttons">
+                  <button mat-button matStepperLesson style="color:white">Start</button>
+                  <button mat-button matStepperNext style="color:white">Next lesson</button>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+            </div>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="fifthFormGroup">
+        <form [formGroup]="fifthFormGroup">
+          <ng-template matStepLabel>Introduction to hydroponics</ng-template>
+          <div class="grid-container">
+            <div class="lesson">
+              <div class="lessonPic">
+                <img src="assets/leccion5.jpg" alt="imagen de leccion 1">
+                <div class="descriptionLesson">
+                  <p>In this class you will lear an introduction and principal material that you will need. </p>
+                </div>
+                <div class="buttons">
+                  <button mat-button matStepperLesson style="color:white">Start</button>
+                  <button mat-button matStepperNext style="color:white">Next lesson</button>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+            </div>
+          </div>
+        </form>
+      </mat-step>
+    </mat-stepper>
+  </div>
+
+</div>
+

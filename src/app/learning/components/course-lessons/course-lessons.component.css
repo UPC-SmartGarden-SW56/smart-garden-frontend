@@ -1,0 +1,63 @@
+.mat-stepper-vertical {
+  margin-top: 10px;
+  background-color: #EBEBD3;
+}
+
+.mat-mdc-form-field {
+  margin-top: 10px;
+  background-color: #EBEBD3;
+}
+img {
+  max-width: 50%;
+  height: 300px;
+}
+
+.course-lesson{
+  background-color: #EBEBD3;
+  margin-top: 25px;
+}
+
+.buttons{
+  align-self: center;
+  margin: 8px;
+  margin-top: -2px;
+}
+.descriptionLesson{
+  align-self: center;
+  margin: 9px;
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+
+}
+.lessonPic{
+  display: flex;
+
+}
+.grid-container{
+
+}
+ng-template{
+  font-size: 60px;
+  font-family: Inter, sans-serif;
+}
+button{
+  display: inline-flex;
+  margin: 10px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.course-title{
+
+  border: 30px solid #EBEBD3;
+  font-family: "Inter Semi Bold", sans-serif;
+  font-size: 30px;
+  overflow: hidden;
+
+}
+
+
