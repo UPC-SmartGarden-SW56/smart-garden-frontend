@@ -1,0 +1,48 @@
+<div class="create-course-container">
+  <mat-card class="create-course-card">
+    <form>
+      <div class="form-row">
+        <div class="form-column">
+          <label for="courseName" class="custom-label">Course Name:</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <input matInput id="courseName" placeholder="Enter course name">
+          </mat-form-field>
+        </div>
+
+        <div class="form-column">
+          <label for="price" class="custom-label">Price:</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <input matInput id="price" type="number" placeholder="Enter price">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-column">
+          <label for="categorie" class="custom-label">Categorie:</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-select id="categorie" placeholder="Select Category">
+              <mat-option value="item1">Cultivo en gota</mat-option>
+              <mat-option value="item2">Cultivo en aerolinea</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="form-column">
+          <label for="studentLevel" class="custom-label">Student Level:</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-select id="studentLevel" placeholder="Select Level">
+              <mat-option value="basic">Basic</mat-option>
+              <mat-option value="intermediate">Intermediate</mat-option>
+              <mat-option value="advance">Advance</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button mat-raised-button color="primary" class="div-button">Next</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

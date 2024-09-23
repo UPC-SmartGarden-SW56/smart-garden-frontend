@@ -1,0 +1,29 @@
+.app-create-course {
+    margin: 30px 0 0 0;
+}
+.mi-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #437648;
+}  
+.mat-toolbar {
+    padding: 0 16px; /* Añadir padding para mejor apariencia */
+}  
+.mat-spacer {
+    flex: 1 1 auto;
+}
+.title-new-course {
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.header-menu {
+    color: #fff !important;
+    font-size: 1.2em;
+}
+.icon-log {
+    margin-left: .5rem;
+    scale: 1.5;
+}
