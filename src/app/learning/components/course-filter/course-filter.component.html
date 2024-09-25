@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill" class="level-filter">
+  <p>Filter by Category</p>
+  <mat-select (selectionChange)="onLevelChange($event.value)" aria-label="Select category">
+    <mat-option *ngFor="let level of levels" [value]="level">
+      {{ level }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+

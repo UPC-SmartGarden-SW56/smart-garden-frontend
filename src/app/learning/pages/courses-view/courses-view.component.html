@@ -1,0 +1,30 @@
+<mat-toolbar class="course-toolbar" aria-label="Course Toolbar">
+  <h1> Courses </h1>
+  <div class="toobar-content">
+    <app-course-filter class="course-filter" (levelChange)="filterByLevel($event)" aria-label="Filter" )></app-course-filter>
+  </div>
+</mat-toolbar>
+
+<div class="card-container" role="list" aria-label="Courses Cards">
+  <div  class="card" *ngFor="let course of filteredCourses" role="listitem">
+    <mat-card>
+      <mat-card-header class="card-header">
+        <mat-card-title>{{ course.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p><strong><b>{{ course.level }}</b></strong></p>
+        <p><strong>id:</strong> {{ course.id }}</p>
+        <p><strong>Description:</strong> {{ course.description }}</p>
+        <p><strong>Category:</strong> {{ course.category }}</p>
+        <p><strong>Price:</strong> {{ course.price }}</p>
+      </mat-card-content>
+
+      <div class="card-footer">
+        <button mat-icon-button routerLink="/lessons" class="start-button"> Start course</button>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<ng-template #noCourses>
+  <p>No courses available.</p>
+</ng-template>
