@@ -1,0 +1,50 @@
+<div [ngStyle]="{'background-color': '#EBEBD3', 'height': '110vh'}">
+  <div class="create-course-container" >
+    <mat-card class="create-course-card">
+      <mat-card-header>
+        <p> Create new Course</p>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="form-row" [formGroup]="courseForm" (ngSubmit)="onSubmit()" >
+
+          <mat-form-field appearance="outline">
+            <mat-label>Id</mat-label>
+            <input matInput type="number" >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Title</mat-label>
+            <input matInput type="text" >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Description</mat-label>
+            <textarea matInput type="text"  ></textarea>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" >
+            <mat-label>Category</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Level</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let level of levels" [value]="level"> {{level}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Price</mat-label>
+            <input matInput >
+          </mat-form-field>
+        </form>
+      </mat-card-content>
+      <ng-container>
+        <button mat-button routerLink="/courses" color="primary" mat-raised-button type="submit">Save Course</button>
+      </ng-container>
+    </mat-card>
+
+  </div>
+</div>
+
