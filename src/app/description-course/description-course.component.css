@@ -1,0 +1,79 @@
+.create-course-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    height: auto; /* Cambié a auto en lugar de 50vh para adaptarse mejor */
+  }
+  
+  .create-course-card {
+    padding: 30px;
+    width: 600px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column; /* Cambié a columna para hacer que los elementos estén en línea vertical */
+    margin-bottom: 20px;
+  }
+  
+  .form-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .custom-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .custom-file-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  textarea {
+    height: 150px; /* Ajusté la altura para hacer el área de texto más visible */
+    resize: none;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+  
+  .div-button {
+    color: #fff;
+    background-color: #000;
+    width: 150px;
+  }
+  
+  .small-text {
+    font-size: 12px;
+    color: #999;
+  }
+  

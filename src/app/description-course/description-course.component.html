@@ -1,0 +1,25 @@
+<div class="create-course-container">
+    <mat-card class="create-course-card">
+      <form>
+        <div class="form-row">
+          <div class="form-column">
+            <label for="description" class="custom-label">Description:</label>
+            <mat-form-field appearance="outline" class="full-width">
+              <textarea matInput id="description" placeholder="Enter description"></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+  
+        <div class="form-row">
+          <div class="form-column">
+            <label for="uploadVideo" class="custom-label">Upload preview video:</label>
+            <input type="file" id="uploadVideo" accept="video/*" class="custom-file-input">
+          </div>
+        </div>
+  
+        <div class="button-row">
+          <button mat-raised-button color="primary" class="div-button">Finish</button>
+        </div>
+      </form>
+    </mat-card>
+</div>

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -8,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 @Component({
-  selector: 'app-create-course',
+  selector: 'app-description-course',
   standalone: true,
   imports: [
     // otros módulos
@@ -17,16 +19,15 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatSelectModule,
     MatButtonModule,
     MatCardModule,
-    MatSidenavModule
-
-  ],  templateUrl: './create-course.component.html',
-  styleUrl: './create-course.component.css'
+    MatSidenavModule,
+    MatToolbarModule
+  ],
+  templateUrl: './description-course.component.html',
+  styleUrl: './description-course.component.css',
+  
 })
-export class CreateCourseComponent {
-  constructor(private router: Router) {}
-
-  goToNext() {
-    this.router.navigate(['/description']);
+export class DescriptionCourseComponent {
+  ngAfterViewInit() {
+    // Aquí puedes hacer ajustes en la vista después de que esté renderizada
   }
-
 }

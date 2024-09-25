@@ -9,7 +9,7 @@
     <!-- Enlaces de navegación (centrados) -->
     <a class="header-menu" mat-button [routerLink]="'/home'">Home</a>
     <a class="header-menu" mat-button [routerLink]="'/courses'">Courses</a>
-    <a class="header-menu" mat-button [routerLink]="'/analytics'">Analytics</a>
+    <a class="header-menu" mat-button [routerLink]="'/detalles'">Analytics</a>
     <a class="header-menu" mat-button [routerLink]="'/notifications'">Notifications</a>
   
     <span class="mat-spacer"></span> <!-- Deja espacio entre elementos -->
@@ -22,6 +22,41 @@
     </button>
   </mat-toolbar>
 <h1 class="title-new-course">CREATE NEW COURSE</h1>
-  
-<app-create-course></app-create-course>
+<div class="create-course-container">
+  <form class="create-course-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" placeholder="Enter course name">
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="text" id="price" placeholder="Enter price">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="category">Categorie</label>
+        <select id="level">
+          <option>Select Categorie</option>
+          <option value="gota">CULTIVO EN GOTA</option>
+          <option value="aeroponia">CULTIVO EN AEROPONÍA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="level">Student Level:</label>
+        <select id="level">
+          <option>Select Level</option>
+          <option value="basic">Basic</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advance</option>
+        </select>
+      </div>
+    </div>
+    
+    <button class="next-button" type="submit" (click)="onNextClick()">Next</button>
+  </form>
+</div>
+
 <router-outlet></router-outlet>
