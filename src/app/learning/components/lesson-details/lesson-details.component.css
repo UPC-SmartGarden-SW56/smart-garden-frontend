@@ -1,0 +1,76 @@
+.video-container {
+  position: page;
+  align-content: center;
+  border: 10px;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+}
+.course-title{
+
+  border: 40px solid #EBEBD3;
+  font-family: "Inter Semi Bold", sans-serif;
+  font-size: 30px;
+  overflow: hidden;
+
+}
+.video-container iframe {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+.description {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  border: 1px solid #ccc; /* Opcional: añade un borde */
+  padding: 16px; /* Opcional: añade un padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  margin-top: 10px; /* Espacio entre el video y la descripción */
+  text-align: center; /* Centra el texto de la descripción */
+  margin-bottom: 70px;
+}
+
+section {
+  display: table;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+  display: inline-flex;
+
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+  background-color: black;
+  color: white;
+
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+
+}
